@@ -1,0 +1,32 @@
+
+<input
+  [formControl]="searcher"
+  type="text"
+  placeholder="Buscar Deudas"
+  class="form-control mt-2"
+/>
+<div class="entries" *ngIf="entries$ | async as entries">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entrie of entries; let i = index">
+        <th scope="row">{{ i }}</th>
+        <td>{{ entrie.name }}</td>
+        <td>
+          <li *ngFor="let description of entrie.description">
+            {{ description.name }}
+          </li>
+        </td>
+        <td>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

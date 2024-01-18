@@ -1,0 +1,59 @@
+/* Estilos para el formulario de edición de notas */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título del formulario */
+  form p {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  /* Etiquetas de los campos del formulario */
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+  
+  /* Campos de texto del formulario */
+  .form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Botón para agregar literales */
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Estilos para la sección de descripciones */
+  .description {
+    margin-top: 1rem;
+  }
+  
+  /* Estilos para los campos de descripción */
+  .description .row {
+    margin-bottom: 1rem;
+  }
+  
+  /* Botón para guardar cambios */
+  .btn-primary[disabled] {
+    background-color: #007bff;
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  

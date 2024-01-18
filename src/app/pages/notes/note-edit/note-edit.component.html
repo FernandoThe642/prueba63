@@ -1,0 +1,43 @@
+<form [formGroup]="form">
+    <p>Editar nota</p>
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre de la nota</label>
+      <input
+        id="name"
+        type="text"
+        class="form-control"
+        formControlName="name"
+        placeholder="Nombre de la nota"
+      />
+      <button class="btn btn-primary mt-2" (click)="createLiteral()">
+        Agregar Literal
+      </button>
+    </div>
+    <div
+      class="description"
+      formArrayName="description"
+      *ngFor="let item of description; let i = index"
+    >
+      <form class="row g-3" [formGroupName]="i">
+        <div class="col-auto">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            formControlName="name"
+            placeholder="Descripción del literal"
+          />
+        </div>
+      </form>
+    </div>
+  </form>
+  
+  <button
+    class="btn btn-primary mt-2"
+    (click)="updateEntrie()"
+    [disabled]="form.invalid"
+  >
+    Guardar
+  </button>
+  

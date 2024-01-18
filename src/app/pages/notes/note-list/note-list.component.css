@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilos para el botón 'Agregar nota' */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+  }
+  
+  /* Estilos para el campo de búsqueda */
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  /* Estilos para la tabla */
+  .table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  /* Estilos para los encabezados de la tabla */
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  /* Estilos para los botones 'Editar' y 'Eliminar' */
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+  }
+  
+  /* Estilos para el contenedor de entradas */
+  .entries {
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  

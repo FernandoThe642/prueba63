@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "notas-4468e": {
+      "hosting": {
+        "Calculadora": [
+          "notas2265"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "notas-4468e"
+  }
+}
